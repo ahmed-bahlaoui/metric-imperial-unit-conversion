@@ -22,7 +22,11 @@ A clean and responsive web application that converts between metric and imperial
 
 ## Live Demo
 
-![Screenshot of the application](https://i.ibb.co/6R8Thjf8/Screenshot-2025-02-07-231001.png)
+## Light theme
+![Screenshot of the application](./light-theme.png)
+
+## Dark theme
+![Screenshot of the application](./dark-theme.png)
 
 ## Installation and Setup
 
