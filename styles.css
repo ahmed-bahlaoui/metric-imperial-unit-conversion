@@ -1,7 +1,19 @@
+:root {
+  color-scheme: light dark;
+  --bg-color-light: #f4f4f4;
+  --bg-color-dark: #1f2937;
+  --text-light: #353535;
+  --text-dark: #fff;
+  --card-white: #fff;
+  --card-dark: #273549;
+  --card-title-white: #5a537b;
+  --card-title-dark: #ccc1ff;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: light-dark(var(--bg-color-light), var(--bg-color-dark));
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,6 +51,7 @@ body {
   text-align: center;
   font-size: 58px;
   color: white;
+  font-weight: 600;
   outline: none;
   margin: 1rem 0;
 }
@@ -82,7 +95,7 @@ body {
 }
 
 .unit-conversion-container {
-  background-color: white;
+  background-color: light-dark(var(--card-white), var(--card-dark));
   width: 100%; /* Will take full width of parent (550px) */
   text-align: center;
   padding: 1rem 0;
@@ -92,7 +105,7 @@ body {
 .unit-conversion-container h3 {
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  color: #5a537b;
+  color: light-dark(var(--card-title-white), var(--card-title-dark));
   font-size: 20px;
   margin-top: 1rem;
 }
@@ -101,7 +114,7 @@ body {
   margin: 2em auto;
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  color: #353535;
+  color: light-dark(var(--text-light), var(--text-dark));
   font-size: 16px;
 }
 
